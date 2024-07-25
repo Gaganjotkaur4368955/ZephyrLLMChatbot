@@ -1,41 +1,55 @@
-# ZephyrLLMChatbot
-A guideline to build no-cost LLM chatbot 
+``# ZephyrLLMChatbot: Focus on your goals
 
-This README provides a structured and detailed guide to help users through the process of creating and deploying a customized LLM chatbot using Hugging Face Spaces and Gradio, highlighting key steps and customization options, complete with useful links for easy navigation.
+A guideline to build a no-cost LLM chatbot focused on promoting real estate knowlegde and positive interactions with the user.
 
+Introduction
+This project demonstrates how to create a customized LLM chatbot using Hugging Face's Inference API and Gradio. The chatbot, named "Focus on your goals❤️🕊️", is designed to help the users to focus on their goals and manage stress and help you with your studies.
 
-# Build and Deploy Your Custom LLM App in 5 Minutes for Free
+Prerequisites
+Before you start, make sure you have the following:
 
-## Introduction
-Have you ever wished to craft a chatbot tailored to your needs? Whether it's a culinary wizard to guide you through complex recipes or an artistic mentor to discuss the nuances of painting techniques, this comprehensive guide is your gateway. We'll walk you through the simple steps to build and deploy your own LLM-based chatbot using [Hugging Face Spaces](https://huggingface.co/spaces) and Gradio—all in just five minutes, and absolutely free of charge!
+Python 3.6 or higher
+A Hugging Face account (sign up at huggingface.co)
+Installation
+Clone this repository:
 
-## Prerequisites
-Before you  start creating your chatbot, make sure you have the following:
-- **A Hugging Face Account**: Essential for accessing the platform where you'll build and host your chatbot. [Sign up here](https://huggingface.co/join).
+git clone https://github.com/Gaganjotkaur4368955/ZephyrLLMChatbot.git
+cd ZephyrLLMChatbot
+Install the required packages:
 
-## Setup and Deployment
-1. **Choosing Your Chatbot’s Identity**: Decide what your chatbot will specialize in. This could be anything from a chef, painter, or even a relaxing buddy to help you unwind. The role you choose will define the interactions and capabilities of your chatbot.
+pip install -r requirements.txt
+Usage
+To run the chatbot locally:
 
-2. **Logging into Hugging Face**:  Here, you'll need an account to access the tools required for deploying your chatbot. If you don't have an account, signing up is straightforward and quick.
+Open a terminal and navigate to the project directory.
+Run the following command:
+python app.py
+Open your web browser and go to the URL displayed in the terminal (usually http://127.0.0.1:7860).
+Features
+Uses the Zephyr-7b-beta model from Hugging Face for natural language processing.
+Customizable system message to set the chatbot's behavior.
+Adjustable parameters:
+Max new tokens
+Temperature
+Top-p (nucleus sampling)
+Example prompts to demonstrate the chatbot's capabilities.
+Customization
+You can customize the chatbot by modifying the following in app.py:
 
-3. **Navigating to Hugging Face Spaces**: Spaces are where the magic happens. This section of Hugging Face allows users to create and manage their applications seamlessly. Navigate to [Spaces](https://huggingface.co/spaces) to get started.
+System message: Edit the system_message variable to change the chatbot's overall behavior.
+Model: Change the InferenceClient to use a different model from Hugging Face.
+Examples: Add or modify the examples list to showcase different interactions.
+Interface: Adjust the Gradio interface settings for a different look and feel.
+Deployment
+This project can be easily deployed on Hugging Face Spaces:
 
-4. **Creating Your Space**: Initiate a new space by clicking on 'Create New Space'. It’s important that the name of your Space reflects the chatbot's role, as it helps in identifying the application’s purpose at a glance.
+Fork this repository to your GitHub account.
+Go to huggingface.co/spaces and click "Create new Space".
+Choose "Gradio" as the SDK.
+Link your forked GitHub repository.
+Deploy and enjoy your chatbot!
+Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-5. **Configuring Your Chatbot**:
-   - **Selecting the Framework and Model**: Choose 'Gradio' as the framework for its user-friendly interface capabilities, and select a suitable model, such as 'Zephyr 7B', known for its versatility across various tasks.
-   - **Customization**: Here’s where you personalize the chatbot. Depending on the selected role, you might want to tailor system messages and interaction style. This customization will enable your chatbot to interact appropriately according to its role.
-
-6. **Deployment**: Once setup is complete, deploy your chatbot by simply clicking the create button. Deployment usually takes a couple of minutes. After this, your chatbot will be up and running and ready to interact.
-
-## Customization Example
-To make your chatbot truly unique, consider personalizing it extensively. For instance, if you choose a 'Relaxing Buddy' role:
-- Modify the system messages to include comforting phrases and stress-relief tips.
-- Program the chatbot to suggest relaxation exercises, guide through meditation sessions, or simply offer soothing conversations.
-
- Explore different roles and tweak the system instructions to discover the full potential of your chatbot. Don’t forget to share your creations and experiences, as your insights could inspire others in their chatbot development.
-
- If you wish to contribute: Please fork this repo. 
-
- For any question reach me out @ turna.fardousi@gmail.com
-
+Contact
+For any questions or feedback, please reach out to ga4368965@alphacollege.me. `
